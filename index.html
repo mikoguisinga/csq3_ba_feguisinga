@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id=demo></p>
+    <p id=demo></p>
+</head>
+<body>
+    <script>
+        var a=prompt("Please enter a number: "); var b=prompt("Please enter a second number: "); var c= prompt("Please enter a 3rd number: ");
+
+        if (isNaN(a)||isNaN(b)||isNaN(c)){
+            window.alert("ENGKKK! Not a number"); 
+        }
+        else{
+            (determineTriangle(a,b,c));
+        }
+
+        function determineTriangle(a, b, c){
+        if (a == b && c == b){
+            window.alert("Equilateral Triangle");
+        
+        }
+ 
+        else if (a == b || b == c|| c == a){
+            window.alert("Isosceles Triangle");
+        }
+ 
+        else {
+            window.alert("Scalene Triangle");
+        }
+
+        }
+
+    </script>
+</body>
+</html>
